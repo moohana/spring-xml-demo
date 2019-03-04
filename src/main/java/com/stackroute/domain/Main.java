@@ -19,6 +19,11 @@ public class Main {
         Movie movie1 = (Movie) context.getBean("movie");
         System.out.println(movie.getActor());
         System.out.println(movie1.equals(movie));
+        ApplicationContext bean = new ClassPathXmlApplicationContext("beans .xml");
+
+        BeanLifecycleDemoBean bean1 = (BeanLifecycleDemoBean)bean.getBean("beanlife");
+
+        System.out.println(bean1);
 
     }
 }

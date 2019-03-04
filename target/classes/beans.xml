@@ -20,6 +20,10 @@
     <bean id="mov" autowire="constructor" class="com.stackroute.domain.Movie">
 
     </bean>
+    <bean id="beanlife" class="com.stackroute.domain.BeanLifecycleDemoBean" init-method="customInit"
+          destroy-method="customDestroy">
+        <property name="message" value="i'm property message" />
+    </bean>
 
 
 </beans>
