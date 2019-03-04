@@ -24,6 +24,12 @@ public class Main {
         BeanLifecycleDemoBean bean1 = (BeanLifecycleDemoBean)bean.getBean("beanlife");
 
         System.out.println(bean1);
+        ApplicationContext post = new ClassPathXmlApplicationContext("beans .xml");
+
+        BeanPostProcessorDemoBean post1 = (BeanPostProcessorDemoBean)post.getBean("beanlife1");
+
+        System.out.println(post1);
+
 
     }
 }

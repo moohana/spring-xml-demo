@@ -24,6 +24,9 @@
           destroy-method="customDestroy">
         <property name="message" value="i'm property message" />
     </bean>
+    <bean id="beanlife1" class="com.stackroute.domain.BeanPostProcessorDemoBean">
+    <property name="beanName" value="this is the post processor"/>
+    </bean>
 
 
 </beans>
